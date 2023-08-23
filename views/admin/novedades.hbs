@@ -1,0 +1,58 @@
+<div class="conteiner" style="margin:50px auto">
+	<div class="row">
+		<div class="col">
+			<p class="text-right">Hola {{usuario}}!! <a href="/admin/login/logout" class="btn btn-sm btn-danger">Cerrar sesión <i class="fa fa-sign-out"></i>
+			</a></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-7">
+			<h3>Listado de clientes</h3>
+		</div>
+		<div class="col-2 text.right">
+			<a href="/admin/novedades/agregar" class="btn btn-success"><i class="fa fa-plus">
+			</i>Nuevo</a>
+		</div>
+		<div class="col-3">
+			<form class="form-inline my-2 my-lg-0" action="/admin/novedades" method="get">
+				<input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search" name="q" {{#if q}} value="{{q}}"{{/if}}>
+				<button class="btn btn-secondary my-2 my-sm-0" type="sumbit"><i class="fa fa-search"></i></button>
+			</form>
+	</div>
+</div>
+<div class="row">
+	<div class="col">
+		<table class="table">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">ID</th>
+					<th scope="col">Cliente</th>
+					<th scope="col">Comentario</th>
+					<th scope="col">Imagen</th>
+					<th scope="col" class="text-center">Acciones</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each novedades}}
+				<tr>
+					<th scope="row">{{id}}</th>
+					<td>{{nombre}}</td>
+					<td>{{comentario}}</td>
+					<td>{{{imagen}}}</td>
+					<td class="text-center">
+						<a href="/admin/novedades/modificar/{{id}}" title="Modificar" class="btn btn-secondary">
+						<i class="fas fa-pencil-alt"></i></a>
+						<a href="/admin/novedades/eliminar/{{id}}" title="Eliminar" class="btn btn-secondary">
+						<i class="fas fa-trash"></i></a>
+					</td>
+				</tr>
+			{{/each}}
+			</tbody>
+			{{#if is_search}}
+				{{#unless novedades.length}}
+					No se encontraron resultados para "<strong>{{q}}</strong>"
+				{{/unless}}
+			{{/if}}
+		</table>
+	</div>
+</div>

@@ -1,0 +1,207 @@
+        <div class="container-fluid">
+            <div class="row align-items-center hero scroll_section" id="home">
+                <div class="col-lg-3 offset-lg-2">
+                    <p>
+                        Bienvenidos!
+                    </p>
+                    <h1>
+                        Iphone Store
+                    </h1>
+                    <p>
+                        Venta de equipos Apple y accesorios
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row my-3 scroll_section" id="modelo">
+            <div class="accordion accordion-flush col-md-5 offset-md-1 py-3" id="accordionFlushExample">
+                <div class="modelo">Modelos</div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button aria-controls="flush-collapseOne" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#flush-collapseOne" data-bs-toggle="collapse" type="button">
+                            <img class="manzana" src="images/manzana.png">
+                                Iphone 11
+                            </img>
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" id="flush-collapseOne">
+                        <div class="accordion-body">
+                            La pantalla del iPhone 11 tiene esquinas redondeadas que siguen el elegante diseño curvo del teléfono, y las esquinas se encuentran dentro de un rectángulo estándar.
+                            <img class="once" src="images/iphone 11.jpg">
+                            </img>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button aria-controls="flush-collapseTwo" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#flush-collapseTwo" data-bs-toggle="collapse" type="button">
+                            <img class="manzana" src="images/manzana.png">
+                                Iphone 12
+                            </img>
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" id="flush-collapseTwo">
+                        <div class="accordion-body">
+                            Entre las características más especiales del iPhone 12 para los amantes de Apple se encuentran la capacidad de sus cámaras traseras, la posibilidad de conectarse redes 5G y el regreso de la marca a un diseño con bordes más planos.
+                            <img class="doce" src="images/iphone12.jpg">
+                            </img>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button aria-controls="flush-collapseThree" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#flush-collapseThree" data-bs-toggle="collapse" type="button">
+                            <img class="manzana" src="images/manzana.png">
+                                Iphone 13
+                            </img>
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" id="flush-collapseThree">
+                        <div class="accordion-body">
+                            Está equipado con el nuevo chip Apple A15 Bionic. Se trata de un sistema en chip (SoC) fabricado especialmente por Apple, que sucede al A14 Bionic ubicado en el iPhone 12. El chip está basado en la arquitectura ARMv8 y cuenta con dos núcleos Firestorm de alto rendimiento. Estos pueden acelerar hasta 2,99 GHz. Para mejorar la eficiencia y el ahorro de batería, también hay cuatro núcleos Icestorm adicionales con una velocidad de reloj de 1,82 GHz.
+                            <img class="trece" src="images/iphone13.jpg">
+                            </img>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button aria-controls="flush-collapseFour" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#flush-collapseFour" data-bs-toggle="collapse" type="button">
+                            <img class="manzana" src="images/manzana.png">
+                                Iphone 14
+                            </img>
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" id="flush-collapseFour">
+                        <div class="accordion-body">
+                            El iPhone 14 y iPhone 14 Plus permiten tomar fotos y videos asombrosos, gracias a un potente sistema con nuevas cámaras gran angular y TrueDepth frontal, la cámara ultra gran angular para lograr ángulos únicos y Photonic Engine, un tratamiento mejorado de imágenes.
+                            <img class="catorce" src="images/iphone14.png">
+                            </img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 my-3 ">
+                <div class="rounded py-5 offset-md-2 iphone">
+                    <h2 class="text-center">
+                        Clientes
+                    </h2>
+                    <div class="carousel slide" id="carouselExampleCaptions">
+                        <div class="carousel-inner">
+                            {{#each cliente}}
+                            <div class="carousel-item active">
+                            
+                                <img class="d-block w-100" src="{{imagen}}">
+                                    <div class="carousel-caption d-none d-md-block" id="{{id}}">
+                                        <h5 class="comcliente">
+                                            {{nombre}}
+                                        </h5>
+                                        <p class="comcliente">
+                                            {{comentario}}
+                                        </p>
+                                    </div>
+                                </img>
+                            </div>
+                            {{/each}}
+                        </div>
+                        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions" type="button">
+                            <span aria-hidden="true" class="carousel-control-prev-icon">
+                            </span>
+                            <span class="visually-hidden">
+                                Previous
+                            </span>
+                        </button>
+                        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions" type="button">
+                            <span aria-hidden="true" class="carousel-control-next-icon">
+                            </span>
+                            <span class="visually-hidden">
+                                Next
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accesorios">
+            Accesorios
+        </div>
+        <div class="row my-5 acc scroll_section" id="auriculares">
+        <div class="card col-md-5 my-3 offset-md-1" style="width: 18rem;">
+  <img src="images/Airpods 2da gen.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">AirPods Segunda Generación</h5>
+    <p class="card-text">Los AirPods te brindan una experiencia inalámbrica increíble, pues ahora te ofrecen muchas horas de audio y conversación y la posibilidad de usarlos con un estuche de carga inalámbrica. Sácalos del estuche y estarán listos para funcionar con todos tus dispositivos. Póntelos y se conectarán al instante, como por arte de magia, para brindarte un sonido rico en matices y de alta calidad.</p>
+    <a href="https://www.apple.com/airpods-2nd-generation/" class="btn btn-primary">Saber más</a>
+  </div>
+</div>
+<div class="card col-md-5 my-3 offset-md-1" style="width: 18rem;">
+  <img src="images/airpods 3ra gen.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">AirPods Tercera Generación</h5>
+    <p class="card-text">El audio espacial personalizado con seguimiento dinámico de la cabeza te ofrece una experiencia de sonido envolvente y tridimensional. Cuando escuches música o veas películas y series, sentirás que estás en el centro de la acción.</p>
+    <a href="https://www.apple.com/airpods-3rd-generation/" class="btn btn-primary">Saber más</a>
+  </div>
+</div>
+<div class="card col-md-5 my-3 offset-md-1" style="width: 18rem;">
+  <img src="images/airpods pro.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">AirPods Pro</h5>
+    <p class="card-text">Los AirPods Pro se sometieron a un rediseño radical para alcanzar una calidad de audio todavía mejor. La Cancelación Activa de Ruido mejorada y el modo Ambiente adaptable reducen aún más el ruido exterior. El audio espacial lleva la experiencia del sonido inmersivo a un nivel mucho más personal. El control táctil ahora te permite ajustar el volumen con sólo deslizar. Y gracias a una mejora sustancial en la autonomía, ahora puedes disfrutar 6 horas de batería con una sola carga.
+</p>
+    <a href="https://www.apple.com/airpods-pro/" class="btn btn-primary">Saber más</a>
+  </div>
+</div>
+</div>
+<div class="row my-3 acc scroll_section"id="cargadores">
+    <div class="card col-md-5 my-3 offset-md-3" style="width: 18rem;">
+  <img src="images/fuente.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Fuente 5w</h5>
+    <p class="card-text">Puede ser utilizado en todas las versiones.
+</p>
+  </div>
+</div>
+<div class="card col-md-5 my-3 offset-md-1" style="width: 18rem;">
+  <img src="images/fuente carga rapida.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Fuente 20W carga rápida</h5>
+    <p class="card-text">Para versiones de Iphone 12 en adelante. Puedes recargar hasta el 50 % de la batería del iPhone en unos 30 minutos.
+</p>
+  </div>
+</div>
+</div>
+<div class="row py-4 scroll_section" id="visitanos">
+    <div class="col-md-4 offset-md-1">
+        <h2>
+            Visitanos
+        </h2>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3202.484947555914!2d-64.27438802488582!3d-36.61471196646637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c2cdb9f90bad3b%3A0x63914e01f9364b5f!2sJuncal%20587%2C%20L6300EZD%20Santa%20Rosa%2C%20La%20Pampa!5e0!3m2!1ses!2sar!4v1692230040690!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="col-md-4 mt-4 mt-sm-0 offset-md-1 scroll_section" id="contactanos">
+        <h2>Contactanos</h2>
+        <form class="row g-3" action="/" method="post">
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre">
+            </div>
+            <div class="col-md-6">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" name="apellido">
+            </div>
+            <div class="col-12">
+                <label for="tel" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="telefono" name="tel" placeholder="Cod. de area (sin 0) - número de teléfono (sin 15)">
+            </div>
+            <div class="col-12">
+                <label for="mensaje" class="form-label">Consulta</label>
+                <textarea class="form-control" id="consulta" cols="30" rows="9" name="mensaje"></textarea>
+            </div>
+            <div class="col-12">
+                <button type="sumbit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+        <p>{{message}}</p>
+    </div>
+</div>
